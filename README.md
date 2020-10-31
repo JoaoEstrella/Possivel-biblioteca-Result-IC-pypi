@@ -18,12 +18,10 @@ Interagi no mé, cursus quis, vehicula ac nisi. Interessantiss quisso pudia ce r
 Install
 -------
 Installation with ``pip``
-::
 
     $ pip install xx
     
 or ``conda``
-::
 
     $ conda install xx
     
@@ -32,41 +30,41 @@ Simple Example
 
 Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Cevadis im ampola pa arma uma pindureta.
 
+```python
+from pacote1_raiz import FireFly
+from pacote1_raiz import Pop, Abc, Pso, Sa
 
-  >>> from pacote1_raiz import FireFly
-  >>> from pacote1_raiz import Pop, Abc, Pso, Sa
-  >>>
-  >>>
-  >>> nPop = 10
-  >>> nGen = 50
-  >>> ranges = np.array([[-50, 50]]*10)
-  >>> fun = rastrigin
-  >>>
-  >>> meta1 = Pso()
-  >>> meta2 = FireFly()
-  >>> meta3 = Abc()
-  >>> meta4 = Sa()
-  >>>  
-  >>> nRep = 100
-  >>> metas = {'Abc': [Pop(meta3, fun, ranges, int(nPop/2), nGen) for r in range(nRep)],
-  >>>          'Pso': [Pop(meta1, fun, ranges, nPop, nGen) for r in range(nRep)],
-  >>>          'FA': [Pop(meta2, fun, ranges, nPop, nGen) for r in range(nRep)],
-  >>>          'Sa': [Pop(meta4, fun, ranges, nPop, nGen) for r in range(nRep)]
-  >>>        }
-  >>>
-  >>> for k, reps in tqdm(metas.items()):
-  >>>     for r in reps:
-  >>>         for g in range(1, nGen):
-  >>>             next(r)
-  >>>
-  >>>for k, v in metas.items():
-  >>>    bestRep = min(v, key=lambda m: m.pBest['value'][-1])
-  >>>   
-  >>>    print('%s:' %k)
-  >>>    print(bestRep.pBest['ch'][-1])
-  >>>    print('FO:', bestRep.pBest['value'][-1])
-  >>>    print()
-	
+
+nPop = 10
+nGen = 50
+ranges = np.array([[-50, 50]]*10)
+fun = rastrigin
+
+meta1 = Pso()
+meta2 = FireFly()
+meta3 = Abc()
+meta4 = Sa()
+  
+nRep = 100
+metas = {'Abc': [Pop(meta3, fun, ranges, int(nPop/2), nGen) for r in range(nRep)],
+         'Pso': [Pop(meta1, fun, ranges, nPop, nGen) for r in range(nRep)],
+         'FA': [Pop(meta2, fun, ranges, nPop, nGen) for r in range(nRep)],
+         'Sa': [Pop(meta4, fun, ranges, nPop, nGen) for r in range(nRep)]
+        }
+
+for k, reps in tqdm(metas.items()):
+    for r in reps:
+        for g in range(1, nGen):
+            next(r)
+
+for k, v in metas.items():
+    bestRep = min(v, key=lambda m: m.pBest['value'][-1])
+   
+    print('%s:' %k)
+    print(bestRep.pBest['ch'][-1])
+    print('FO:', bestRep.pBest['value'][-1])
+    print()
+```
   Abc:
   [ 0.015 -1.026  0.135 -0.101  1.029 -0.07  -0.914  1.877  2.029 -2.881]
   FO: 25.642901925010136
