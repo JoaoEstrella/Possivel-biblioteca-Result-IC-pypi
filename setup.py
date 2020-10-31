@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 #https://www.alura.com.br/artigos/como-publicar-seu-codigo-python-no-pypi
 setuptools.setup(
-    name="example-pkg-YOUR-USERNAME-HERE", # Replace with your own username
-    version="0.0.1",
-    author="Example Author",
-    author_email="author@example.com",
+    name="teste-joaoEstrela", # Replace with your own username
+    version="0.0.2",
+    author="JoaoEstrela",
+    author_email="jaoestrella@hotmail.com",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
