@@ -3,14 +3,6 @@ Não Sei o Nome a por(v1.0)
 
 Copyright (C) <2020> by João Vitor Coelho Estrela
 
-.. image:: 
-  :target: 
-  
-.. image:: 
-   :target: 
-   
-.. image:: 
-   :target: 
    
 - **Documentation:** 
 - **Source:** 
@@ -38,37 +30,35 @@ or ``conda``
 Simple Example
 --------------
 
-This is a simple example for the detection of `sturctural hole spanners <https://en.wikipedia.org/wiki/Structural_holes>`_ 
-using the `HIS <https://keg.cs.tsinghua.edu.cn/jietang/publications/WWW13-Lou&Tang-Structural-Hole-Information-Diffusion.pdf>`_ algorithm.
+Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Cevadis im ampola pa arma uma pindureta.
 
-.. code:: python
 
   >>> from pacote1_raiz import FireFly
   >>> from pacote1_raiz import Pop, Abc, Pso, Sa
-
-
+  >>>
+  >>>
   >>> nPop = 10
   >>> nGen = 50
   >>> ranges = np.array([[-50, 50]]*10)
   >>> fun = rastrigin
-
+  >>>
   >>> meta1 = Pso()
   >>> meta2 = FireFly()
   >>> meta3 = Abc()
   >>> meta4 = Sa()
-  
+  >>>  
   >>> nRep = 100
   >>> metas = {'Abc': [Pop(meta3, fun, ranges, int(nPop/2), nGen) for r in range(nRep)],
   >>>          'Pso': [Pop(meta1, fun, ranges, nPop, nGen) for r in range(nRep)],
   >>>          'FA': [Pop(meta2, fun, ranges, nPop, nGen) for r in range(nRep)],
   >>>          'Sa': [Pop(meta4, fun, ranges, nPop, nGen) for r in range(nRep)]
   >>>        }
-
+  >>>
   >>> for k, reps in tqdm(metas.items()):
   >>>     for r in reps:
   >>>         for g in range(1, nGen):
   >>>             next(r)
-
+  >>>
   >>>for k, v in metas.items():
   >>>    bestRep = min(v, key=lambda m: m.pBest['value'][-1])
   >>>   
