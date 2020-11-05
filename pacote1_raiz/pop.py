@@ -3,8 +3,11 @@ import numpy as np
 from .heuristica import Heuristica
 
 
-class Pop(Heuristica):
+"""Modulo da classe Pop"""
 
+
+class Pop(Heuristica):
+    """Classe Pop"""
     def __init__(self, meta, fun, ranges, nPop, nGen):
 
         self._objective = fun
