@@ -5,36 +5,31 @@ Install the package (or add it to your ``requirements.txt`` file):
 
 .. code:: console
 
-    $ pip install sphinx_rtd_theme
+    $ pip install PACOTE
 
 In your ``conf.py`` file:
 
 .. code:: python
 
-    import sphinx_rtd_theme
+	from pacote1_raiz import Pop, Abc
 
-    extensions = [
-        ...
-        'sphinx_rtd_theme',
-    ]
+	nPop = 10
+	nGen = 50
+	ranges = np.array([[-50, 50]]*10)
+	fun = rastrigin
 
-    html_theme = "sphinx_rtd_theme"
+	meta = Abc()
+	  
+	abc = Pop(meta, fun, ranges, int(nPop/2), nGen)
+	
+	for g in range(1, nGen):
+		next(abc)
 
 
 .. note::
-    Adding this theme as an extension is what enables localization of theme
-    strings in your translated output. If these strings are not translated in
-    your output, either we lack the localized strings for your locale, or you
-    are using an old version of the theme.
+    A geração ``nG=0`` é a população aleatória.
 
 Via Git or Download
 ===================
 
-Symlink or subtree the ``sphinx_rtd_theme/sphinx_rtd_theme`` repository into your documentation at
-``docs/_themes/sphinx_rtd_theme`` then add the following two settings to your Sphinx
-``conf.py`` file:
-
-.. code:: python
-
-    html_theme = "sphinx_rtd_theme"
-    html_theme_path = ["_themes", ]
+bla bla bla

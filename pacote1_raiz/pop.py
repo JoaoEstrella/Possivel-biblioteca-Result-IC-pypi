@@ -9,6 +9,17 @@ from .heuristica import Heuristica
 class Pop(Heuristica):
     """Classe Pop"""
     def __init__(self, meta, fun, ranges, nPop, nGen):
+        """
+        Args:
+            path (str): The path of the file to wrap
+            field_storage (FileStorage): The :class:`FileStorage` instance to wrap
+            temporary (bool): Whether or not to delete the file when the File
+               instance is destructed
+
+        Returns:
+            BufferedFileStorage: A buffered writable file descriptor
+
+        """
 
         self._objective = fun
         self.ranges = ranges

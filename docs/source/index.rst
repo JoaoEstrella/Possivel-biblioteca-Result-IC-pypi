@@ -22,11 +22,18 @@
     demo/structure
     demo/demo
     demo/lists_tables
-    demo/api
 
 .. toctree::
-    :maxdepth: 3
+   :maxdepth: 4
+   :caption: API
+
+   api/pacote1_raiz
+
+.. toctree::
+    :maxdepth: 2
     :numbered:
     :caption: This is an incredibly long caption for a long menu
 
     demo/long
+
+

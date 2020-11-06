@@ -50,7 +50,7 @@ class Heuristica(ABC):
     def getGen(self, nG):
         """
         Retorna um DataFrame da pop em uma dada nG que contém
-            as variáveis e o valor avaliado.
+        as variáveis e o valor avaliado.
         """
         df = pd.DataFrame(np.stack(
                          [self.pList[p]['ch'][nG] for p in range(self.nPop)]),
