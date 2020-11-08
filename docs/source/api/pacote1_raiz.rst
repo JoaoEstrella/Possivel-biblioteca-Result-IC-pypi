@@ -11,17 +11,17 @@ Heuristicas
    pacote1_raiz.sa
 
 Classe mae: heuristica
----------------------
+----------------------
 
-.. automodule:: pacote1_raiz.heuristica
+.. autoclass:: pacote1_raiz.heuristica.Heuristica
    :members:
    :undoc-members:
    :show-inheritance:
 
 Classe filha: Pop
-------------------------
+-----------------
 
-.. automodule:: pacote1_raiz.pop
+.. autoclass:: pacote1_raiz.pop.Pop
    :members:
    :undoc-members:
    :show-inheritance:
