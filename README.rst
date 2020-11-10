@@ -15,14 +15,12 @@
   :target: http://sphinx-rtd-theme.readthedocs.io/en/latest/?badge=latest
   :alt: Documentation Status
 
-This Sphinx_ theme was designed to provide a great reader experience for
-documentation users on both desktop and mobile devices. This theme is used
-primarily on `Read the Docs`_ but can work with any Sphinx project. You can find
-a working demo of the theme in the `theme documentation`_
+A biblioteca_ xxxxxxxxxx. Documentação construida no `Read the Docs`_, é
+possivel encontrar e ler alguns exemplos `aqui`_
 
-.. _Sphinx: http://www.sphinx-doc.org
+.. _biblioteca: google.com
 .. _Read the Docs: http://www.readthedocs.org
-.. _theme documentation: https://sphinx-rtd-theme.readthedocs.io/en/latest/
+.. _aqui: google.com
 
 Installation
 ============
@@ -83,14 +81,13 @@ This theme is highly customizable on both the page level and on a global level.
 To see all the possible configuration options, read the documentation on
 `configuring the theme`_.
 
-.. _configuring the theme: https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
+.. _configuring the theme: google.com
 
 Contributing
 ============
 
-If you would like to help modify or translate the theme, you'll find more
-information on contributing in our `contributing guide`_.
+Se você gostaria de contribuir, siga as intruções no `guia de contribuição`_.
 
-.. _contributing guide: https://sphinx-rtd-theme.readthedocs.io/en/latest/contributing.html
+.. _guia de contribuição: https://sphinx-rtd-theme.readthedocs.io/en/latest/contributing.html
 
 .. |name| replace:: Biblioteca do Joao

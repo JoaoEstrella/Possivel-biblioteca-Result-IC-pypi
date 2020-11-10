@@ -81,12 +81,6 @@ luctus efficitur arcu. Cras ut dictum mi. Nulla congue interdum lorem, semper se
 Document Subsection
 -------------------
 
-.. figure:: static/yi_jing_01_chien.jpg
-    :align: right
-    :figwidth: 200px
-
-    This is a caption for a figure. Text should wrap around the caption.
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur in eros et blandit. Nunc maximus,
 nisl at auctor vestibulum, justo ex sollicitudin ligula, id faucibus urna orci tristique nisl.
 Duis auctor rutrum orci, in ornare lacus condimentum quis. Quisque arcu velit, facilisis quis interdum ac,

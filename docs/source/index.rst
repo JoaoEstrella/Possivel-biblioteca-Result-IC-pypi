@@ -1,7 +1,7 @@
 .. include:: ../../README.rst
 
 .. toctree::
-   :caption: Theme Documentation
+   :caption: Primeiros passos
    :maxdepth: 2
 
    installing
@@ -20,8 +20,6 @@
     :caption: Demo Documentation
 
     demo/structure
-    demo/demo
-    demo/lists_tables
 
 .. toctree::
    :maxdepth: 4
@@ -32,7 +30,7 @@
 .. toctree::
     :maxdepth: 2
     :numbered:
-    :caption: This is an incredibly long caption for a long menu
+    :caption: Menu Longo
 
     demo/long
 
