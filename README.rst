@@ -5,9 +5,9 @@
 .. image:: https://img.shields.io/pypi/v/sphinx_rtd_theme.svg
    :target: https://pypi.python.org/pypi/sphinx_rtd_theme
    :alt: Pypi Version
-.. image:: https://travis-ci.org/readthedocs/sphinx_rtd_theme.svg?branch=master
-   :target: https://travis-ci.org/readthedocs/sphinx_rtd_theme
-   :alt: Build Status
+.. image:: https://readthedocs.org/projects/rep-nome2/badge/?version=latest
+   :target: https://rep-nome2.readthedocs.io/pt/latest/?badge=latest
+   :alt: Documentation Status
 .. image:: https://img.shields.io/pypi/l/sphinx_rtd_theme.svg
    :target: https://pypi.python.org/pypi/sphinx_rtd_theme/
    :alt: License
